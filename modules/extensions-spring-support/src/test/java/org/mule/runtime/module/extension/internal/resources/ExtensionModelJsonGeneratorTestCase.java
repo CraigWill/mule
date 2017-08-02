@@ -45,6 +45,7 @@ import org.mule.test.oauth.TestOAuthExtension;
 import org.mule.test.petstore.extension.PetStoreConnector;
 import org.mule.test.ram.RickAndMortyExtension;
 import org.mule.test.soap.extension.FootballSoapExtension;
+import org.mule.test.substitutiongroup.extension.SubstitutionGroupExtension;
 import org.mule.test.subtypes.extension.SubTypesMappingConnector;
 import org.mule.test.transactional.TransactionalExtension;
 import org.mule.test.typed.value.extension.extension.TypedValueExtension;
@@ -120,6 +121,9 @@ public class ExtensionModelJsonGeneratorTestCase extends AbstractMuleTestCase {
                                                                           new ExtensionJsonGeneratorTestUnit(javaLoader,
                                                                                                              HeisenbergExtension.class,
                                                                                                              "heisenberg.json"),
+                                                                          new ExtensionJsonGeneratorTestUnit(javaLoader,
+                                                                                                             SubstitutionGroupExtension.class,
+                                                                                                             "substitutiongroup.json"),
                                                                           new ExtensionJsonGeneratorTestUnit(javaLoader,
                                                                                                              TransactionalExtension.class,
                                                                                                              "tx-ext.json"),
