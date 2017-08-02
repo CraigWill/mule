@@ -8220,7 +8220,8 @@
               "xmlHints": {
                 "allowInlineDefinition": true,
                 "allowTopLevelDefinition": true,
-                "allowReferences": true
+                "allowReferences": true,
+                "substitutionGroup": ""
               },
               "typeAlias": {
                 "value": "HealthyFood"
@@ -8360,7 +8361,8 @@
               "xmlHints": {
                 "allowInlineDefinition": true,
                 "allowTopLevelDefinition": true,
-                "allowReferences": true
+                "allowReferences": true,
+                "substitutionGroup": ""
               },
               "typeAlias": {
                 "value": "HealthyFood"
@@ -8492,7 +8494,8 @@
         "xmlHints": {
           "allowInlineDefinition": true,
           "allowTopLevelDefinition": true,
-          "allowReferences": true
+          "allowReferences": true,
+          "substitutionGroup": ""
         },
         "typeAlias": {
           "value": "GroupedFood"
@@ -8643,7 +8646,8 @@
         "xmlHints": {
           "allowInlineDefinition": true,
           "allowTopLevelDefinition": true,
-          "allowReferences": true
+          "allowReferences": true,
+          "substitutionGroup": ""
         },
         "typeAlias": {
           "value": "HealthyFood"

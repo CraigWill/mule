@@ -10345,7 +10345,8 @@
         "xmlHints": {
           "allowInlineDefinition": true,
           "allowTopLevelDefinition": true,
-          "allowReferences": true
+          "allowReferences": true,
+          "substitutionGroup": ""
         },
         "typeAlias": {
           "value": "Bear"
@@ -10409,7 +10410,8 @@
         "xmlHints": {
           "allowInlineDefinition": true,
           "allowTopLevelDefinition": true,
-          "allowReferences": true
+          "allowReferences": true,
+          "substitutionGroup": ""
         },
         "typeAlias": {
           "value": "AnimalsOutputAttributes"
@@ -10464,7 +10466,8 @@
         "xmlHints": {
           "allowInlineDefinition": true,
           "allowTopLevelDefinition": true,
-          "allowReferences": true
+          "allowReferences": true,
+          "substitutionGroup": ""
         },
         "typeAlias": {
           "value": "ShapeOutputAttributes"
