@@ -10346,7 +10346,10 @@
           "allowInlineDefinition": true,
           "allowTopLevelDefinition": true,
           "allowReferences": true,
-          "substitutionGroup": ""
+          "substitutionGroup": {
+            "prefix": "",
+            "element": ""
+          }
         },
         "typeAlias": {
           "value": "Bear"
@@ -10411,7 +10414,10 @@
           "allowInlineDefinition": true,
           "allowTopLevelDefinition": true,
           "allowReferences": true,
-          "substitutionGroup": ""
+          "substitutionGroup": {
+            "prefix": "",
+            "element": ""
+          }
         },
         "typeAlias": {
           "value": "AnimalsOutputAttributes"
@@ -10467,7 +10473,10 @@
           "allowInlineDefinition": true,
           "allowTopLevelDefinition": true,
           "allowReferences": true,
-          "substitutionGroup": ""
+          "substitutionGroup": {
+            "prefix": "",
+            "element": ""
+          }
         },
         "typeAlias": {
           "value": "ShapeOutputAttributes"
