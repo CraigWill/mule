@@ -6,6 +6,7 @@
  */
 package org.mule.runtime.core.el;
 
+import static com.google.common.collect.Sets.newHashSet;
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
 import static java.util.Optional.empty;
@@ -36,14 +37,15 @@ import static org.mule.runtime.core.el.BindingContextUtils.ATTRIBUTES;
 import static org.mule.runtime.core.el.BindingContextUtils.AUTHENTICATION;
 import static org.mule.runtime.core.el.BindingContextUtils.DATA_TYPE;
 import static org.mule.runtime.core.el.BindingContextUtils.ERROR;
+import static org.mule.runtime.core.el.BindingContextUtils.FLOW;
 import static org.mule.runtime.core.el.BindingContextUtils.PARAMETERS;
 import static org.mule.runtime.core.el.BindingContextUtils.PAYLOAD;
 import static org.mule.runtime.core.el.BindingContextUtils.PROPERTIES;
 import static org.mule.runtime.core.el.BindingContextUtils.VARS;
-import static org.mule.runtime.core.el.DataWeaveExpressionLanguageAdaptor.FLOW;
 import static org.mule.runtime.dsl.api.component.config.DefaultComponentLocation.fromSingleComponent;
 import static org.mule.test.allure.AllureConstants.ExpressionLanguageFeature.EXPRESSION_LANGUAGE;
 import static org.mule.test.allure.AllureConstants.ExpressionLanguageFeature.ExpressionLanguageStory.SUPPORT_DW;
+
 import org.mule.runtime.api.el.BindingContext;
 import org.mule.runtime.api.el.DefaultExpressionLanguageFactoryService;
 import org.mule.runtime.api.el.ExpressionLanguage;
@@ -71,16 +73,17 @@ import com.google.common.collect.Sets;
 
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 
 @Feature(EXPRESSION_LANGUAGE)
 @Story(SUPPORT_DW)
@@ -274,7 +277,7 @@ public class DataWeaveExpressionLanguageAdaptorTestCase extends AbstractWeaveExp
   @Test
   public void variablesCannotOverrideEventBindings() throws MuleException {
     Event event = spy(testEvent());
-    HashSet<String> variables = Sets.newHashSet(PAYLOAD, ATTRIBUTES, ERROR, VARS, FLOW);
+    Set<String> variables = newHashSet(PAYLOAD, ATTRIBUTES, ERROR, VARS, FLOW);
     when(event.getVariableNames()).thenReturn(variables);
     TypedValue<String> varValue = new TypedValue<>("", STRING);
     variables.forEach(var -> doReturn(varValue).when(event).getVariable(var));

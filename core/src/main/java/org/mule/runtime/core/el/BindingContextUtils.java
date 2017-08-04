@@ -10,6 +10,7 @@ import static java.util.Collections.unmodifiableMap;
 import static java.util.Objects.requireNonNull;
 import static org.mule.runtime.api.metadata.DataType.STRING;
 import static org.mule.runtime.api.metadata.DataType.fromType;
+
 import org.mule.runtime.api.el.BindingContext;
 import org.mule.runtime.api.message.Error;
 import org.mule.runtime.api.message.Message;
@@ -37,6 +38,7 @@ public class BindingContextUtils {
   public static final String PROPERTIES = "properties";
   public static final String PARAMETERS = "parameters";
   public static final String AUTHENTICATION = "authentication";
+  public static final String FLOW = "flow";
 
   public static final BindingContext NULL_BINDING_CONTEXT = BindingContext.builder().build();
 
