@@ -3628,11 +3628,7 @@
         "xmlHints": {
           "allowInlineDefinition": true,
           "allowTopLevelDefinition": true,
-          "allowReferences": true,
-          "substitutionGroup": {
-            "prefix": "",
-            "element": ""
-          }
+          "allowReferences": true
         },
         "typeAlias": {
           "value": "DifferedKnockableDoor"
@@ -3716,11 +3712,7 @@
         "xmlHints": {
           "allowInlineDefinition": true,
           "allowTopLevelDefinition": true,
-          "allowReferences": true,
-          "substitutionGroup": {
-            "prefix": "",
-            "element": ""
-          }
+          "allowReferences": true
         },
         "typeAlias": {
           "value": "door"
@@ -3903,11 +3895,7 @@
               "xmlHints": {
                 "allowInlineDefinition": true,
                 "allowTopLevelDefinition": true,
-                "allowReferences": true,
-                "substitutionGroup": {
-                  "prefix": "",
-                  "element": ""
-                }
+                "allowReferences": true
               },
               "typeAlias": {
                 "value": "DifferedKnockableDoor"
